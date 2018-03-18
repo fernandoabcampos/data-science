@@ -31,3 +31,7 @@ df <- data.frame(gender=g, height=v1, weight=v2)
 
 df
 
+boys <- subset(df, gender=='m')
+boys
+#Correlation betwen height and weight
+cor(df$height, df$weight) #(could be replaced by attach(df) and the access to height and weight would be direct)
