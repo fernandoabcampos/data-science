@@ -15,3 +15,19 @@ v7[2:4]
 cubic <- function(x) x^3
 x0 <- (-4:4)
 cubic(x0)
+
+############## ifelse structure #########
+a <- c(-1,0,2,5)
+ifelse(a>0,log(a),0)
+
+
+
+######### dataframes sample #############
+g <- c('m','m','f','m','f','f')
+v1 <- c(131,125,126,140,152,119)
+v2 <- c(48,53,45,40,49,50)
+
+df <- data.frame(gender=g, height=v1, weight=v2)
+
+df
+
