@@ -35,3 +35,10 @@ boys <- subset(df, gender=='m')
 boys
 #Correlation betwen height and weight
 cor(df$height, df$weight) #(could be replaced by attach(df) and the access to height and weight would be direct)
+
+
+#Using recycling to fill vector/matrix elements
+(v <- 2*1:5)
+(A <- matrix(0,2,4))
+(v + A) # it warns (not multiple), but does the job + recycle
+A
